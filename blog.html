@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Assignment-5</title>
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .poppins-font {
+        font-family: "Poppins", sans-serif;
+        font-style: normal;
+      }
+    </style>
+  </head>
+  <body class="bg-[#3751fd13] py-6 poppins-font">
+    <!-- header section -->
+    <header class="w-11/12 lg:w-11/12 lg:container mx-auto bg-white px-6 py-4 rounded-2xl">
+        <nav class="flex flex-col md:flex-row justify-between items-center">
+            <!-- logo section -->
+            <div class="flex items-end">
+                <img class="w-fit" src="assets/logo.png" alt="logo">
+                <h2 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h2>
+            </div>
+            <button id="back-btn" class="btn btn-primary px-4 mx-auto md:mx-1">Back to Desk</button>
+        </nav>
+    </header>
+
+    <main class="w-11/12 lg:w-11/12 lg:container mx-auto mt-3">
+        <h3 class="text-3xl text-center font-bold">Blogs</h3>
+        <!-- question-1 -->
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-1: What are the different ways to select an element in the DOM?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">You can select elements using method like getElementById(), getElementsByClassName() and querySelector() for single elements or querySelectorAll() for multiple elements.</p>
+        </div>
+        <!-- question-2 -->
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">Difference between innerHTML, innerText and textContent is innerHTML set HTMl content and innerText get or set text and textContent get or set text ignoring style and HTML tags.</p>
+        </div>
+        <!-- question-3 -->
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-3: What is event delegation in the DOM?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">Event delegation involves attaching a single event listener to parent element to handle events for child elements by capturing or bubbling the event.</p>
+        </div>
+        <!-- question-4 -->
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-4: What is event bubbling in the DOM?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">Event bubbling is when an event triggers on a child element and then propagates up through its ancestors to the root of the document.</p>
+        </div>
+        <!-- question-5 -->
+        <div class="bg-white mt-8 rounded-xl py-4 pl-8 pr-8">
+            <h2 class="text-xl lg:text-3xl font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+
+            <hr class="border-dashed mt-4 mb-4">
+
+            <p class="text-gray-500">To Create, add, remove element I use document.createElement(), appendChild(), remove() methods.</p>
+        </div>
+    </main>
+    
+    <script src="scripts/back.js"></script>
+</body>
+</html>
