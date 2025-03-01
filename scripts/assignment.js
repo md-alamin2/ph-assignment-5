@@ -34,7 +34,7 @@ for (let card of cards) {
   const completedBtn = card.querySelector("button");
   completedBtn.addEventListener("click", function (event) {
     event.target.classList.add("btn-disabled");
-    event.target = alert("Board update Successfully");
+    event.target = alert("Board updated Successfully");
 
     // assigned task decrement
     let taskAssigned = document.getElementById("task-assigned");
@@ -60,7 +60,7 @@ for (let card of cards) {
     const div = document.createElement("div");
     div.classList.add("bg-[#3751fd13]", "p-2", "mb-4");
     div.innerHTML = `
-        <p class="text-sm">You have Complete ${title} Task at <span class="realTime">${realTime}</span></p>
+        <p class="text-sm">You have Completed Task ${title} at <span class="realTime">${realTime}</span></p>
         `;
     message.appendChild(div);
 
