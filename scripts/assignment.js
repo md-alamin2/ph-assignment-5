@@ -38,7 +38,7 @@ for (let card of cards) {
 
     // assigned task decrement
     let taskAssigned = document.getElementById("task-assigned");
-    const remainingTask = parseInt(taskAssigned.innerHTML);
+    const remainingTask = parseInt(taskAssigned.innerText);
     taskAssigned.innerText = remainingTask - 1;
 
     // completed work increment
