@@ -67,7 +67,7 @@ for (let card of cards) {
     // clear history
     const clearHistory = document.getElementById("clear");
     clearHistory.addEventListener("click", function () {
-      message.removeChild(div);
+      message.innerHTML = "";
     });
 
     allBtnClicked.push(event.target);
